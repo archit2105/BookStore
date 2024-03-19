@@ -1,0 +1,310 @@
+{
+    "books":[
+      {
+        "title": "A Tale of Two Cities",
+        "isbn": "1932394101",
+        "pageCount": 400,
+        "publishedDate": { "$date": "2004-08-01T00:00:00.000-0700" },
+        "thumbnailUrl": "data:image/jpeg;base64,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",
+        "shortDescription": "This is a historical novel published in 1859 by Charles Dickens, set in London and Paris before and during the French Revolution.",
+        "longDescription": "The novel tells the story of the French Doctor Manette, his 18-year-long imprisonment in the Bastille in Paris, and his release to live in London with his daughter Lucie whom he had never met.The story is set against the conditions that led up to the French Revolution and the Reign of Terror.",
+        "status": "Published",
+        "authors": ["Charles Dickens"],
+        "categories": ["History","Fiction"],
+        "price":6999,
+        "currency":"INR",
+        "discount":20,
+        "discountUnits":"percent"
+      },
+ 
+ 
+
+    {
+      "title": "Everything Is F*cked: A Book About Hope",
+      "isbn": "1932394104",
+      "pageCount": 288,
+      "publishedDate": { "$date": "2004-08-01T00:00:00.000-0700" },
+      "thumbnailUrl": "https://m.media-amazon.com/images/I/41OQdLkHbgL._SY445_SX342_.jpg",
+      "shortDescription": "We live in an interesting time. Materially, everything is the best it’s ever been—we are freer, healthier and wealthier than any people in human history. Yet, somehow everything seems to be irreparably and horribly f*cked—the planet is warming, governments are failing, economies are collapsing, and everyone is perpetually offended on Twitter.",
+      "longDescription": "In Everthing Is F*cked, Manson turns his gaze from the inevitable flaws within each individual self to the endless calamities taking place in the world around us. Drawing from the pool of psychological research on these topics, as well as the timeless wisdom of philosophers such as Plato, Nietzsche, and Tom Waits, he dissects religion and politics and the uncomfortable ways they have come to resemble one another. He looks at our relationships with money, entertainment and the internet, and how too much of a good thing can psychologically eat us alive. He openly defies our definitions of faith, happiness, freedom—and even of hope itself. With his usual mix of erudition and where-the-f*ck-did-that-come-from humor, Manson takes us by the collar and challenges us to be more honest with ourselves and connected with the world in ways we probably haven’t considered before.",
+      "status": "PUBLISH",
+      "authors": ["Mark Manson"],
+      "categories": ["psychology"],
+      "price":1575,
+      "currency":"INR",
+      "discount":25,
+      "discountUnits":"percent"
+    },
+    {
+      "title": "The Subtle Art of Not Giving a F*ck",
+      "isbn": "1939394104",
+      "pageCount": 288,
+      "publishedDate": { "$date": "2004-08-01T00:00:00.000-0700" },
+      "thumbnailUrl": "https://m.media-amazon.com/images/I/511vJPN7p5L._SY445_SX342_.jpg",
+      "shortDescription": "We live in an interesting time. Materially, everything is the best it’s ever been—we are freer, healthier and wealthier than any people in human history. Yet, somehow everything seems to be irreparably and horribly f*cked—the planet is warming, governments are failing, economies are collapsing, and everyone is perpetually offended on Twitter.",
+      "longDescription": "In Everthing Is F*cked, Manson turns his gaze from the inevitable flaws within each individual self to the endless calamities taking place in the world around us. Drawing from the pool of psychological research on these topics, as well as the timeless wisdom of philosophers such as Plato, Nietzsche, and Tom Waits, he dissects religion and politics and the uncomfortable ways they have come to resemble one another. He looks at our relationships with money, entertainment and the internet, and how too much of a good thing can psychologically eat us alive. He openly defies our definitions of faith, happiness, freedom—and even of hope itself. With his usual mix of erudition and where-the-f*ck-did-that-come-from humor, Manson takes us by the collar and challenges us to be more honest with ourselves and connected with the world in ways we probably haven’t considered before.",
+      "status": "PUBLISH",
+      "authors": ["Mark Manson"],
+      "categories": ["psychology"],
+      "price":388,
+      "currency":"INR",
+      "discount":10,
+      "discountUnits":"percent"
+    },
+    {
+      "title": "Concepts of Phycics",
+      "isbn": "1932394108",
+      "pageCount": 900,
+      "publishedDate": { "$date": "2022-08-01T00:00:00.000-0700" },
+      "thumbnailUrl": "https://m.media-amazon.com/images/I/51CFkZG8UjL._SX342_SY445_.jpg",
+      "shortDescription":"H C Verma s Concepts Of Physics is an all-inclusive book, which serves to detail out the ABC of physics in an intricate manner making it an ideal book for not only the higher secondary students, but also for those who are preparing for their competitive examinations.",
+      "longDescription": ".Physics as a subject is vast and to have all the concepts of Physics compiled in one book is indeed a boon to all students. The book has been tailored to meet the needs 10 + 2 or higher secondary students and for the students who are appearing for a competitive examination. It has everything a student would possibly need for their success in exams. The book comes supplemented with a large number of solved and unsolved problems. Numerical exercises inundate the book for a better understanding of the subject. The book starts with an Introduction to Physics and goes on to elucidate the concept of Physics and Mathematics in the second chapter. In the third chapter the author talks about Rest and Motion: Kinematics. In the fourth chapter he moves on to discuss the concept of Forces. Newton s Laws of Motion is elaborated in the fifth chapter and the theory of Friction is expanded in the sixth chapter. The seventh and eighth chapters feature discussion on Circular Motion and Work and Energy while the focus of the tenth chapter is on Rotational Mechanics. The details of Gravitation, Simple Harmonic Motion and Fluid Mechanics are developed in the eleventh, twelfth and thirteenth chapters. The fourteenth and fifteenth chapters explain Some Mechanical Properties of Matter and Wave Motion and Waves on a String. The sixteenth and seventeenth chapters focus on Sound Waves and Light Waves while the eighteenth chapter stresses on the Geometrical Optics. The nineteenth chapter elaborates on Optical Instruments and Dispersion and Spectra, Speed of Light and Photo metry is discussed in the twentieth, twenty-first and twenty-second chapter",
+      "status": "PUBLISH",
+      "authors": ["Dr.HC Verma"],
+      "categories": ["Education"],
+      "price":550,
+      "currency":"INR",
+      "discount":13,
+      "discountUnits":"percent"
+    },
+    {
+      "title": "Concepts of Phycics part-2",
+      "isbn": "1932394109",
+      "pageCount": 850,
+      "publishedDate": { "$date": "2022-08-01T00:00:00.000-0700" },
+      "thumbnailUrl": "https://m.media-amazon.com/images/I/31xOoi0Dh9L.jpg",
+      "shortDescription":"H C Verma s Concepts Of Physics is an all-inclusive book, which serves to detail out the ABC of physics in an intricate manner making it an ideal book for not only the higher secondary students, but also for those who are preparing for their competitive examinations.",
+      "longDescription": ".Physics as a subject is vast and to have all the concepts of Physics compiled in one book is indeed a boon to all students. The book has been tailored to meet the needs 10 + 2 or higher secondary students and for the students who are appearing for a competitive examination. It has everything a student would possibly need for their success in exams. The book comes supplemented with a large number of solved and unsolved problems. Numerical exercises inundate the book for a better understanding of the subject. The book starts with an Introduction to Physics and goes on to elucidate the concept of Physics and Mathematics in the second chapter. In the third chapter the author talks about Rest and Motion: Kinematics. In the fourth chapter he moves on to discuss the concept of Forces. Newton s Laws of Motion is elaborated in the fifth chapter and the theory of Friction is expanded in the sixth chapter. The seventh and eighth chapters feature discussion on Circular Motion and Work and Energy while the focus of the tenth chapter is on Rotational Mechanics. The details of Gravitation, Simple Harmonic Motion and Fluid Mechanics are developed in the eleventh, twelfth and thirteenth chapters. The fourteenth and fifteenth chapters explain Some Mechanical Properties of Matter and Wave Motion and Waves on a String. The sixteenth and seventeenth chapters focus on Sound Waves and Light Waves while the eighteenth chapter stresses on the Geometrical Optics. The nineteenth chapter elaborates on Optical Instruments and Dispersion and Spectra, Speed of Light and Photo metry is discussed in the twentieth, twenty-first and twenty-second chapter",
+      "status": "PUBLISH",
+      "authors": ["Dr.HC Verma"],
+      "categories": ["Education"],
+      "price":550,
+      "currency":"INR",
+      "discount":13,
+      "discountUnits":"percent"
+    },
+    {
+      "title": "Courage To Be Disliked",
+      "isbn": "1932394105",
+      "pageCount": 288,
+      "publishedDate": { "$date": "2018-08-01T00:00:00.000-0700" },
+      "thumbnailUrl": "https://m.media-amazon.com/images/I/71k7V0QvcdL._SY522_.jpg",
+      "shortDescription": "The Japanese phenomenon that teaches us the simple yet profound lessons required to liberate our real selves and find lasting happiness.",
+      "longDescription": "The Courage to be Disliked shows you how to unlock the power within yourself to become your best and truest self, change your future and find lasting happiness. Using the theories of Alfred Adler, one of the three giants of 19th century psychology alongside Freud and Jung, the authors explain how we are all free to determine our own future free of the shackles of past experiences, doubts and the expectations of others. It's a philosophy that's profoundly liberating, allowing us to develop the courage to change, and to ignore the limitations that we and those around us can place on ourselves.",
+      "status": "PUBLISH",
+      "authors": ["Ichirou Kishimi","Fumitake Koga"],
+      "categories": ["psychology","non-fiction"],
+      "price":338,
+      "currency":"INR",
+      "discount":1,
+      "discountUnits":"percent"
+    },
+    {
+      "title": "Beginning Programming with Java for Dummies",
+      "isbn": "1932395904",
+      "pageCount": 700,
+      "publishedDate": { "$date": "2017-08-01T00:00:00.000-0700" },
+      "thumbnailUrl": "https://m.media-amazon.com/images/I/71Iv0Hq6XxL._SY522_.jpg",
+      "shortDescription": "Are you new to programming and have decided that Java is your language of choice?",
+      "longDescription": "Are you a wanna-be programmer looking to learn the hottest lingo around? Look no further!beginning programming with Java for Dummies, 5th Edition is the easy-to-follow guide you'll want to keep in your back pocket as you work your way toward Java mastery! In plain english, it quickly and easily shows you what goes into creating a program, how to put the pieces together, ways to deal with standard programming challenges, and so much more.",
+      "status": "PUBLISH",
+      "authors": ["Barry Burd"],
+      "categories": ["Java"],
+      "price":670,
+      "currency":"INR",
+      "discount":10,
+      "discountUnits":"percent"
+    },
+    {
+      "title": "The Psychology Of Money",
+      "isbn": "1932394106",
+      "pageCount": 252,
+      "publishedDate": { "$date": "2020-08-01T00:00:00.000-0700" },
+      "thumbnailUrl": "https://m.media-amazon.com/images/I/41+tJ4avt6L._SY445_SX342_.jpg",
+      "shortDescription": "Timeless lessons on wealth, greed, and happiness doing well with money isn?t necessarily about what you know. It?s about how you behave. And behavior is hard to teach, even to really smart people.",
+      "longDescription": "How to manage money, invest it, and make business decisions are typically considered to involve a lot of mathematical calculations, where data and formulae tell us exactly what to do. But in the real world, people don?t make financial decisions on a spreadsheet. They make them at the dinner table, or in a meeting room, where personal history, your unique view of the world, ego, pride, marketing, and odd incentives are scrambled together. In the psychology of money, the author shares 19 short stories exploring the strange ways people think about money and teaches you how to make better sense of one of life?s most important matters.",
+      "status": "PUBLISH",
+      "authors": ["Morgan Housel"],
+      "categories": ["Self-help"],
+      "price":399,
+      "currency":"INR",
+      "discount":5,
+      "discountUnits":"percent"
+    },
+    {
+      "title": "The Power of Now: A Guide to Spiritual Enlightenment",
+      "isbn": "1932394107",
+      "pageCount": 232,
+      "publishedDate": { "$date": "2013-08-01T00:00:00.000-0700" },
+      "thumbnailUrl": "https://m.media-amazon.com/images/I/71I6MaZsCcL._SY522_.jpg",
+      "shortDescription":"The Power of Now: A Guide to Spiritual Enlightenment is a book by Eckhart Tolle. It presents itself as a discussion about how people interact with themselves and others. The concept of self reflection and presence in the moment are presented along with simple exercises for the achievement of its principles.",
+      "longDescription": "Many of us want to find inner peace and improve our lives. We’re seeking – in a word – enlightenment, yet we don’t know which steps to take to find it. Well, the first step may be easier than you imagine. We tend to live in the past and in the future. One moment we’re reminiscing or regretting, the next we’re planning or worrying. Meanwhile, we neglect the one moment that is fully available to us: the present. Now. Only the present is important because nothing ever occurs in the past or future; things happen only in a continuous stream of present moments.Whenever you feel something, that feeling is experienced in the present, because your senses can only give you information about this specific moment. So when we say that something happened in the past, that’s not quite true: it actually happened in a single, present moment.",
+      "status": "PUBLISH",
+      "authors": ["Eckhart Tolle"],
+      "categories": ["Self-help"],
+      "price":1971,
+      "currency":"INR",
+      "discount":10,
+      "discountUnits":"percent"
+    },
+    {
+      "title": "Atomic Habits",
+      "isbn": "1932394103",
+      "pageCount": 320,
+      "publishedDate": { "$date": "2004-08-01T00:00:00.000-0700" },
+      "thumbnailUrl": "https://m.media-amazon.com/images/I/81YkqyaFVEL._SY522_.jpg",
+      "shortDescription": "No matter your goals, Atomic Habits offers a proven framework for improving--every day. James Clear, one of the world's leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results.",
+      "longDescription": "If you're having trouble changing your habits, the problem isn't you. The problem is your system. Bad habits repeat themselves again and again not because you don't want to change, but because you have the wrong system for change. You do not rise to the level of your goals. You fall to the level of your systems. Here, you'll get a proven system that can take you to new heights. Clear is known for his ability to distill complex topics into simple behaviors that can be easily applied to daily life and work. Here, he draws on the most proven ideas from biology, psychology, and neuroscience to create an easy-to-understand guide for making good habits inevitable and bad habits impossible. Along the way, readers will be inspired and entertained with true stories from Olympic gold medalists, award-winning artists, business leaders, life-saving physicians, and star comedians who have used the science of small habits to master their craft and vault to the top of their field.",
+      "status": "PUBLISH",
+      "authors": ["James Clear"],
+      "categories": ["Personal development","psychology"],
+      "price":520,
+      "currency":"INR",
+      "discount":15,
+      "discountUnits":"percent"
+    },
+    {
+      "title": "Technology Paradise Lost",
+      "isbn": "1932394133",
+      "pageCount": 260,
+      "publishedDate": { "$date": "2004-03-01T00:00:00.000-0800" },
+      "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/keller.jpg",
+      "shortDescription": "In Technology Paradise Lost Keller describes how the new thinking is working inside some of the country's most complex and successful organizations, including Merrill Lynch, JetBlue, Harrah's, and Motorola which have cut IT spending to gain a competitive edge, and experienced marked gains to their bottom lines.",
+      "longDescription": "An engine of the world economy, the computer industry is sputtering. What happened  Will it regain its power and again drive economic growth as in the past     No.    That's the surprising conclusion reached by Erik Keller, a central player in the booming IT world of the 1990s. Driven by fear of being left behind, American corporations let IT grow until it reached one half of all corporate capital spending by the year 2000. Now, chastened by their spending failures, IT managers are converging on a new consensus: to exploit IT competitively they must use their smarts over big money.    This shift in thinking comes just as free, open-source software, low-cost international programming labor, and new technologies combine to make the new approach possible.    A former Research Fellow at Gartner, Keller had an insider's view of the irrational spending at many Fortune 500 companies, personally influencing billions of dollars of technology acquisitions.    In Technology Paradise Lost Keller describes how the new thinking is working inside some of the country's most complex and successful organizations, including Merrill Lynch, JetBlue, Harrah's, and Motorola which have cut IT spending to gain a competitive edge, and experienced marked gains to their bottom lines.    As it advances, the new IT think will cause further massive disruptions in the computer business, with fundamental changes in the ways software is developed, sold, and used. Efficiency of IT investment will grow as excess fat is squeezed out of IT salaries, software system costs, and consultants' fees.    In an unexpected twist, Keller argues that even as IT spending is reduced its importance for competitiveness will grow. Reduced spending does not mean IT has become a commodity. Counterintuitively, companies that spend less in order to get more from information technology will likely be the big winners.",
+      "status": "PUBLISH",
+      "authors": ["Erik Keller"],
+      "categories": ["Business"],
+      "price":1000,
+      "currency":"USD",
+      "discount":33,
+      "discountUnits":"percent"
+    },
+    {
+      "title": "Ikigai",
+      "isbn": "1932394102",
+      "pageCount": 208,
+      "publishedDate": { "$date": "2004-08-01T00:00:00.000-0700" },
+      "thumbnailUrl": "https://m.media-amazon.com/images/I/71xH0ALI4-L._SL1500_.jpg",
+      "shortDescription": "'Ikigai' by Hector Garcia and Francesc Miralles explores the Japanese concept of finding one's purpose in life by analyzing the habits and beliefs of the world's longest-living people. Through case studies, the book offers practical insights on how to live a more fulfilling life.",
+      "longDescription": "Are you interested in living a long, healthy and fulfilling life? Who isn’t? The secret to doing so just may be found on the island of Okinawa, in southern Japan, home to the highest concentration of centenarians in the world. And these island dwellers’ secret to longevity may boil down to just one word: ikigai, which roughly translates to your reason for living – or your inner motivation for a specific professional activity.It can also be described as an intersection between four different elements: what you’re passionate about, where your skills lie, how you can earn a living and what the world needs. Many Japanese believe that everyone has an ikigai, or destiny, that they were born to fulfill.",
+      "status": "PUBLISH",
+      "authors": ["Hector Garcia", "Francesc Miralles"],
+      "categories": ["Non Fiction"],
+      "price":315,
+      "currency":"INR",
+      "discount":5,
+      "discountUnits":"percent"
+    },
+
+    {
+      "title": "Harry Potter and the Philosophers Stone",
+      "isbn": "1932394111",
+      "pageCount": 850,
+      "publishedDate": { "$date": "1980-08-01T00:00:00.000-0700" },
+      "thumbnailUrl": "https://m.media-amazon.com/images/I/51zZ3SAulVL._SY445_SX342_.jpg",
+      "shortDescription":"An irresistible new edition of Harry Potter and the Philosopher's Stone created with ultra-talented designers MinaLima, the design magicians behind the gorgeous visual graphic style of the Harry Potter and Fantastic Beasts films.",
+      "longDescription": "J.K. Rowling's complete and unabridged text is accompanied by MinaLima's handsome colour illustrations on nearly every page, superb design, and eight exclusive interactive paper-engineered elements - including Harry's Hogwarts letter, the magical entrance to Diagon Alley, a sumptuous feast in the Great Hall of Hogwarts and more.Designed and illustrated by the iconic house of MinaLima - best known for establishing the graphic design of the Harry Potter and Fantastic Beasts films - this is the perfect gift for Harry Potter fans and a beautiful addition to any collector's bookshelf, enticing readers of all ages to discover the Harry Potter novels all over again.",
+      "status": "PUBLISH",
+      "authors": ["J.K Rowling"],
+      "categories": ["Fiction"],
+      "price":3500,
+      "currency":"INR",
+      "discount":2,
+      "discountUnits":"percent"
+    },
+
+    
+    {
+      "title": "Doing IT Right",
+      "isbn": "133964256",
+      "pageCount": 350,
+      "publishedDate": { "$date": "1995-12-01T00:00:00.000-0800" },
+      "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lorin.jpg",
+      "shortDescription": "Doing IT Right explores IT in its full complexity. It explains fundamental issues of hardware and software structures; it illuminates central issues of networking and encapsulates the essence of client/server computing; its coverage of costing, risk assessment, and due diligence in making computing decisions is unique.",
+      "longDescription": "Only a handful of Information Technology leaders understand the complete range of IT issues, from basic technology to business strategy. One of them, Harold Lorin, has written a definitive guide for the IT decision maker, the technologist, and the system developer.    The breadth and insight of Doing IT Right is unparalleled. Its usefulness as a guide to deeper understanding of business computing will be appreciated by professionals and managers at all levels. This book covers a rich collection of topics, each explained, interrelated, and placed in a coherent framework so that its importance and likely evolution are clear. The author does not shy away from stating his views; he provides color, insight and humor.    Doing IT Right is a tour de force based on Lorin's prodigious knowledge of the industry derived from years of involvement with development and marketing at IBM and other systems houses and from consulting in a variety of environments. It also has its roots in a great many publications of the author, from trade and journal articles and book chapters to six earlier books.    Doing IT Right explores IT in its full complexity. It explains fundamental issues of hardware and software structures; it illuminates central issues of networking and encapsulates the essence of client/server computing; its coverage of costing, risk assessment, and due diligence in making computing decisions is unique; its presentation of the concepts and issues of object-orientation was considered by the managers at an IBM development laboratory to be Unique and more informative than fifteen other OO presentations put together.",
+      "status": "PUBLISH",
+      "authors": ["Harold Lorin"],
+      "categories": ["Business", "Software Engineering"],
+      "price":1500,
+      "currency":"USD",
+      "discount":50,
+      "discountUnits":"percent"
+    },
+
+   
+    {
+      "title": "Client/Server Applications on ATM Networks",
+      "isbn": "137353006",
+      "pageCount": 350,
+      "publishedDate": { "$date": "1997-01-01T00:00:00.000-0800" },
+      "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/minoli2.jpg",
+      "shortDescription": "Client/Server Appliactions on ATM Networks discusses ATM as the key technology for transforming the enterprise network from data-only to an integrated data, voice, video, image and multimedia corporate infrastructure.",
+      "longDescription": "Today, to meet the surging demands of client/server company-wide processes--distributed cooperative computing, business/scientific imaging, video conferencing, multimedia, distance learning and many more--corporations are finding they must extend high-speed communications beyond just a few key sites. This book discusses ATM as the key technology for transforming the enterprise network from data-only to an integrated data, voice, video, image and multimedia corporate infrastructure.    Previous books have covered ATM and client/server separately. This book, intended for networking professionals, is unique in its focus on the hows and whys of the inevitable marriage of these two technologies.",
+      "status": "PUBLISH",
+      "authors": ["Daniel Minoli", "Andrew Schmidt"],
+      "categories": ["Client-Server", "Networking"],
+      "price":300,
+      "currency":"USD",
+      "discount":25,
+      "discountUnits":"percent"
+    },
+
+    {
+      "title": "React and React Native",
+      "isbn": "7932395904",
+      "pageCount": 1200,
+      "publishedDate": { "$date": "2023-08-01T00:00:00.000-0700" },
+      "thumbnailUrl": "https://m.media-amazon.com/images/I/61LdaD2s12L._SY522_.jpg",
+      "shortDescription": "Build React and React Native applications using familiar component concepts",
+      "longDescription": "Dive deep into each platform, from routing in React to creating native mobile applications that can run offline. Use Facebook's Relay, React and GraphQL technologies, to create a unified architecture that powers both web and native applications",
+      "status": "PUBLISH",
+      "authors": ["Adam Boduch"],
+      "categories": ["Web Development"],
+      "price":3999,
+      "currency":"INR",
+      "discount":10,
+      "discountUnits":"percent"
+    },
+   
+  
+ 
+
+
+
+    {
+      "title": "Do It Today",
+      "isbn": "1932394112",
+      "pageCount": 120,
+      "publishedDate": { "$date": "1980-08-01T00:00:00.000-0700" },
+      "thumbnailUrl": "https://m.media-amazon.com/images/I/41ACElFKjiL._SY445_SX342_.jpg",
+      "shortDescription":"The International Bestseller: DO IT TODAY",
+      "longDescription": "Are you also tired of putting off your dreams until tomorrow? Guess what! Tomorrow never comes. Am I right? I've procrastinated and putt off my desire to write a book for a decade. I always came up with excuses like, it's not the right time. Or, I need to do more research. But in 2015 I got tired of this endless procrastination, and finally took action. Six months later, my first book was published.",
+      "status": "PUBLISH",
+      "authors": ["Darius Foroux"],
+      "categories": ["Self-help"],
+      "price":150,
+      "currency":"INR",
+      "discount":5,
+      "discountUnits":"percent"
+    },
+
+    {
+      "title": "Three Mistakes of my Life",
+      "isbn": "1617292436",
+      "pageCount": 300,
+      "thumbnailUrl": "data:image/jpeg;base64,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",
+      "status": "MEAP",
+      "authors": [
+        "Chetan Bhagat"
+      ],
+      "categories": [
+        "Fiction"
+      ],
+      "price": 400,
+      "currency": "INR",
+      "discount": 22,
+      "discountUnits": "percent"
+    }
+
+  ]
+  }

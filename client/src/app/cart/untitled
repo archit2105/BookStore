@@ -1,0 +1,26 @@
+1. cmt-> ng new test --standalone false
+css
+server side rendering -Y
+2.code editor we will opem the folder
+termlinal-cli->ng g c cart --standalone false
+
+@Component
+
+selector:<app-cart>
+style:cart.component.html
+provider:[serviceObj]
+
+class CartComponet{
+
+}
+let a=5;
+.
+.
+
+.
+
+a="fruit";
+T.s-
+let a:number=5;
+
+a="fruit"

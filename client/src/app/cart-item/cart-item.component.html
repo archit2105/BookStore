@@ -1,0 +1,24 @@
+<div class="book-card p-4 d-flex justify-content-start">
+  <div class="left-container">
+    <div class="d-flex justify-content-center">
+      <img class="book-thumbnail" [src]="item.image" alt="" />
+    </div>
+    <div class="counter mt-5 d-flex justify-content-center"></div>
+  </div>
+  <div class="right-container ms-5 d-flex flex-column">
+    <h3 class="text-truncate title">{{ item.Titel }}</h3>
+    <div class="">
+      <h3 class="d-inline-block">{{ discountedPrice | currency : "INR" }}</h3>
+      <span class="ms-2"
+        ><s class="text-secondary">{{ itemPrice | currency : "INR" }}</s></span
+      >
+      <span class="ms-2 text-success">{{ item.discount }}% Off</span>
+    </div>
+    <button
+      class="btn-theme align-items-center mt-auto"
+      (click)="removeItem(item.isbn)"
+    >
+      Remove
+    </button>
+  </div>
+</div>

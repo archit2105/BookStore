@@ -1,0 +1,10 @@
+/* .appsidebar{
+    position: absolute;
+    left: 0px;
+} */
+.appsidebar{
+    position: fixed;
+}
+.home-main{
+    margin-left: 25%;
+}

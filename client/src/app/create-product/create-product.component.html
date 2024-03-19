@@ -1,0 +1,149 @@
+<div class="outer">
+  <div class="container">
+    <div class="row">
+      <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+        <div class="panel border bg-white mt-5">
+          <div class="panel-heading h3 mt-3">Create Product</div>
+          <div class="panel-body p-3">
+            <form [formGroup]="bookForm" (ngSubmit)="onSubmitBook()">
+              <div class="form-group pt-3">
+                <div class="input-field">
+                  <span class="fa fa-header p-2"></span>
+                  <input
+                    type="text"
+                    formControlName="Titel"
+                    id="titel"
+                    placeholder="Enter the titel"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group pt-3">
+                <div class="input-field">
+                  <span class="fa fa-book p-2"></span>
+                  <input
+                    formControlName="isbn"
+                    type="number"
+                    id="isbn"
+                    placeholder="Enter Isbn of the Book"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group pt-3">
+                <div class="input-field">
+                  <span class="fa fa-file p-2"></span>
+                  <input
+                    formControlName="pageCount"
+                    type="number"
+                    id="Page Count"
+                    placeholder="Enter no of page"
+                  />
+                </div>
+              </div>
+              <div class="form-group pt-3">
+                <div class="input-field">
+                  <span class="fa fa-image p-2"></span>
+                  <input
+                    formControlName="image"
+                    type="text"
+                    id="image"
+                    placeholder="Enter image Url"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group pt-3">
+                <div class="input-field">
+                  <span class="fa fa-info p-2"></span>
+                  <input
+                    formControlName="shortDescription"
+                    type="text"
+                    id="shortDescription"
+                    placeholder="Enter short Description"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group pt-3">
+                <div class="input-field">
+                  <span class="fa fa-info p-2"></span>
+                  <textarea
+                    class="textArea"
+                    rows="4"
+                    cols="50"
+                    formControlName="longDescription"
+                    type="text"
+                    id="longDescription"
+                    placeholder="Enter long Description"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="form-group pt-3">
+                <div class="input-field">
+                  <span class="fa fa-user p-2"></span>
+                  <input
+                    formControlName="author"
+                    type="text"
+                    id="author"
+                    placeholder="Enter name of author"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group pt-3">
+                <div class="input-field">
+                  <span class="fa fa-list-alt p-2"></span>
+                  <input
+                    formControlName="categories"
+                    type="text"
+                    id="categories"
+                    placeholder="Enter categories of book"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group pt-3">
+                <div class="input-field">
+                  <span class="fa fa-money p-2"></span>
+                  <input
+                    formControlName="price"
+                    type="number"
+                    id="price"
+                    placeholder="Enter the price"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group pt-3">
+                <div class="input-field">
+                  <span class="fa fa-percent p-2"></span>
+                  <input
+                    formControlName="discount"
+                    type="number"
+                    id="discount"
+                    placeholder="Enter the discount percentage"
+                  />
+                </div>
+              </div>
+
+              <button
+                class="btn btn-dark text-white btn-block mt-4 w-100"
+                [disabled]="bookForm.invalid"
+              >
+                Create Book
+              </button>
+              <button
+                class="btn btn-dark text-white btn-block mt-4 w-100"
+                routerLink="/all-products"
+              >
+                View All Books
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

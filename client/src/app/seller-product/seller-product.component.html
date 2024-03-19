@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="book-card p-1 d-flex flex-column justify-content-between">
+        <div class="d-flex justify-content-center">
+          <img class="book-thumbnail img-fluid" [src]="book.image" />
+        </div>
+        <div class="card-content t1">
+          <h4 class="text-truncate">{{ book.Titel }}</h4>
+          <p class="lead text-secondary text-truncate">{{ book.categories }}</p>
+          <p class="lead text-dark">{{ book.price | currency : "INR" }}</p>
+
+          <button
+            class="btn btn-theme btn-block w-100"
+            (click)="deleteBook(book.isbn)"
+          >
+            DELETE
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

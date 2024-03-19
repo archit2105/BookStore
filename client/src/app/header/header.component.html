@@ -1,0 +1,103 @@
+<nav class="navbar navbar-expand-lg header">
+  <div class="container-fluid">
+    <a class="navbar-brand"
+      ><img
+        class="main-logo"
+        routerLink="/overview"
+        src="../../assets/images/mylogo2.png"
+        alt="logo"
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+        <li class="nav-item">
+          <a
+            class="nav-link active header-text"
+            routerLink="home"
+            *ngIf="this.userServiceObj.sellerStatus() === false"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active header-text"
+            routerLink="register"
+            *ngIf="!this.userServiceObj.headerStatus()"
+            >Register</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link active header-text"
+            routerLink="login"
+            *ngIf="this.userServiceObj.headerStatus() === false"
+            >Login</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active header-text"
+            routerLink="login"
+            *ngIf="this.userServiceObj.headerStatus() === true"
+            (click)="userServiceObj.userLogout()"
+            >Logout</a
+          >
+        </li>
+
+        <!-- search box -->
+        <form #searchBox="ngForm">
+          <div class="header-search ms-3 d-flex align-items-center">
+            <input
+              type="text"
+              class="search-box p-1"
+              [(ngModel)]="searchText"
+              name="searchText"
+              placeholder="Search for books"
+              (keyup)="searchBook(searchText)"
+            />
+          </div>
+        </form>
+
+        <!-- button for sorting dropdown -->
+        <button class="btn-theme ms-4" (click)="showSortMenu()">
+          Sort By <i class="fa fa-angle-down down-arrow"></i>
+        </button>
+
+        <!--dropdown container-->
+        <div class="dropdown-container" *ngIf="isSortMenuVisible">
+          <div class="dropdown-list row w-250">
+            <span
+              class="dropdown-list-item active"
+              *ngFor="let criterion of criteria"
+              (click)="sortBooks(criterion)"
+              >{{ criterion }}
+            </span>
+          </div>
+        </div>
+
+        <div class="head-right-item">
+          <div class="cart">
+            <span
+              ><i
+                class="fa fa-shopping-cart fa-2x cart-image"
+                routerLink="/cart"
+                style="color: rgb(225, 121, 0)"
+              ></i
+            ></span>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>

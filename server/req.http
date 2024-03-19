@@ -1,0 +1,19 @@
+post http://localhost:4000/user-api/user
+Content-Type: application/json
+
+{
+    "username":"archit",
+    "password":"archit",
+    "email":"archit@mail.com"
+}
+
+###
+post http://localhost:4000/user-api/user/archit
+Content-Type: application/json
+
+{
+    "username":"archit",
+    "password":"archit"
+}
+###
+get http://localhost:4000/user-api/user/shubham

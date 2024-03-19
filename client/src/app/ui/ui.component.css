@@ -1,0 +1,411 @@
+.slider {
+    /* background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"); */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    overflow: hidden;
+    margin-top: 0px;
+  }
+ 
+  .sliderWrapper {
+    display: flex;
+    width: 500vw;
+    /* transition: all 1.5s ease-in-out; */
+  }
+ 
+  .sliderItem {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+ 
+
+ 
+  .sliderImg {
+    z-index: 1;
+    width: 100%;
+  }
+ 
+  .sliderTitle {
+    font-style: italic;
+    position: absolute;
+    top: 7%;
+    right: 7%;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+  .sliderTitled{
+    position: relative;
+    top:40%;
+    right:3%;
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+ 
+  .sliderPrice {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    border: 1px solid gray;
+    z-index: 1;
+  }
+ 
+  .buyButton {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    border: 1px solid gray;
+    background-color: black;
+    z-index: 1;
+    cursor: pointer;
+  }
+ 
+  .buyButton:hover {
+    background-color: white;
+    color: black;
+  }
+ 
+ 
+ 
+  .features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+  }
+ 
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+ 
+  .featureIcon {
+    width: 50px;
+    height: 50px;
+  }
+ 
+  .featureTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+  }
+ 
+  .featureDesc {
+    color: gray;
+    width: 50%;
+    height: 100px;
+  }
+ 
+  .product {
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  }
+ 
+  label {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .productImg {
+    width: 50%;
+    height:max-content
+  }
+ 
+  .productDetails {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+  }
+ 
+  .productTitle {
+    font-size: 40px;
+    font-weight: 200;
+  }
+ 
+  .productDesc {
+    font-style: 24px;
+    color: gray;
+  }
+ 
+  .colors,
+  .sizes {
+    display: flex;
+    margin-bottom: 20px;
+  }
+ 
+  .color {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+ 
+  .color:last-child {
+    background-color: darkblue;
+  }
+ 
+  .size {
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+ 
+  .productButton {
+    float: right;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 80px;
+  }
+ 
+  .productButton:hover {
+    background-color: white;
+    color: black;
+  }
+ 
+  .gallery {
+    padding: 40px;
+    display: flex;
+  }
+ 
+  .galleryItem {
+    flex: 1;
+    padding: 40px;
+  }
+ 
+  .galleryImg {
+    width: 100%;
+  }
+ 
+  .newSeason {
+    display: flex;
+  }
+ 
+  .nsItem {
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+ 
+  .nsImg {
+    width: 100%;
+    height: 500px;
+  }
+ 
+ 
+ 
+  .nsButton {
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+   .nsButton:hover {
+   font-size: 1.1rem;
+  }
+  footer {
+    display: flex;
+  }
+ 
+  .footerLeft {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+ 
+  .fMenuTitle {
+    font-size: 16px;
+  }
+ 
+  .fList {
+    padding: 0;
+    list-style: none;
+  }
+ 
+  .fListItem {
+    margin-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+  }
+ 
+  .footerRight {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+ 
+  .fInput {
+    padding: 5px;
+  }
+ 
+  .fButton {
+    padding: 5px;
+    background-color: black;
+    color: white;
+  }
+ 
+  .fIcons{
+    display: flex;
+  }
+ 
+  .fIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+ 
+  .copyright{
+    font-weight: 300;
+    font-size: 14px;
+  }
+ 
+  @media screen and (max-width:480px) {
+    nav{
+      padding: 20px;
+    }
+ 
+    .search{
+      display: none;
+    }
+ 
+    .navBottom{
+      flex-wrap: wrap;
+    }
+ 
+    .menuItem{
+      margin: 20px;
+      font-weight: 700;
+      font-size: 20px;
+    }
+ 
+    .slider{
+      clip-path: none;
+    }
+ 
+    .sliderImg{
+      width: 90%;
+    }
+ 
+    .sliderBg{
+      width: 100%;
+      height: 100%;
+    }
+ 
+    .sliderTitle{
+      display: none;
+    }
+ 
+    .sliderPrice{
+      top: unset;
+      bottom: -50;
+      left: 0;
+      background-color: lightgrey;
+    }
+ 
+    .buyButton{
+      right: 0;
+      top: 0;
+    }
+ 
+    .features{
+      flex-direction: column;
+    }
+ 
+    .product{
+      clip-path: none ;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+ 
+    .productImg{
+      width: 80%;
+    }
+ 
+    .productDetails{
+      width: 100%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      top: 0;
+    }
+ 
+    .productTitle{
+      font-size: 50px;
+      margin: 0;
+    }
+ 
+    .gallery{
+      display: none;
+    }
+ 
+    .newSeason{
+      flex-direction: column;
+    }
+ 
+    .nsItem:nth-child(2){
+      padding: 50px;
+    }
+ 
+    footer{
+      flex-direction: column;
+      align-items: center;
+    }
+ 
+    .footerLeft{
+      padding: 20px;
+      width: 90%;
+    }
+ 
+    .footerRight{
+      padding: 20px;
+      width: 90%;
+      align-items: center;
+      background-color: whitesmoke;
+    }
+ 
+  
+    .author{
+        margin-top: 10px;
+        font-size: 40px;
+    }
+    .best-sellers{
+        margin-top: 10px;
+    }
+  }

@@ -1,0 +1,45 @@
+<div class="side-panel">
+  <div class="panel-heading">
+    <span>Filters</span>
+  </div>
+  <div
+    class="filter-price d-flex justify-content-between"
+    (click)="showPriceFilters()"
+  >
+    <span>Price <i class="arrow fa fa-angle-right"></i></span>
+  </div>
+  <div class="dropdown-container" *ngIf="isPriceFiltersVisible">
+    <div class="dropdown-list price-filter-list row">
+      <span
+        class="dropdown-list-item active"
+        *ngFor="let priceFilter of priceFilters"
+        (click)="filterBooksByPrice(priceFilter)"
+      >
+        Upto {{ priceFilter | currency : "INR" }}
+      </span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .side-panel {
+    /* Your existing styles for the side panel */
+    width: 300px;
+    max-width: 300px;
+    height: 800px;
+    border: 1px solid #a83000;
+    background-color: #a83000;
+    margin-right: auto;
+    margin-left: auto;
+    position: sticky;
+  }
+
+  /* Media query for screens with a width of 768px or less */
+  @media screen and (max-width: 950px) {
+    .side-panel {
+      /* Adjust the width for smaller screens */
+      width: 100px;
+      height: 1000px;
+    }
+  }
+</style>
